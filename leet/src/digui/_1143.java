@@ -18,8 +18,9 @@ public class _1143 {
         char[] charArray1 = text2.toCharArray();
         int n = charArray.length;
         int m = charArray1.length;
-        int dp[][] = new int[n+1][m+1];
-        int i = f1(charArray, charArray1, n, m,dp);
+//        int dp[][] = new int[n+1][m+1];
+//        int i = f1(charArray, charArray1, n, m,dp);
+        int i = f2(charArray, charArray1, n, m);
         return i;
 
     }
@@ -40,14 +41,40 @@ public class _1143 {
         if (dp[n][m]!=0){
             return dp[n][m];
         }
+        int ans = 0;
         if (charArray[n-1]==charArray1[m-1]){
-            dp[n][m]=f1(charArray,charArray1,n-1,m-1,dp)+1;
-            return dp[n][m];
+            ans=f1(charArray,charArray1,n-1,m-1,dp)+1;
+
         }
         if (charArray[n-1]!=charArray1[m-1]){
-            dp[n][m]=Math.max(f1(charArray,charArray1,n-1,m-1,dp),Math.max(f1(charArray,charArray1,n-1,m,dp),f1(charArray,charArray1,n,m-1,dp)));
-            return dp[n][m];
+          ans=  Math.max(f1(charArray,charArray1,n-1,m,dp),f1(charArray,charArray1,n,m-1,dp));
+
         }
-        return 0;
+        dp[n][m]=ans;
+        return dp[n][m];
+    }
+
+    /**
+     * 动态规划
+     * @param charArray
+     * @param charArray1
+     * @param n
+     * @param m
+     * @return
+     */
+    public static int f2(char[] charArray,char[] charArray1,int n,int m){
+        int dp[][] = new int[n+1][m+1];
+
+        for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if (charArray[i-1]==charArray1[j-1]) {
+                    dp[i][j]=dp[i-1][j-1]+1;
+                }else {
+                    dp[i][j]=Math.max(dp[i-1][j],dp[i][j-1]);
+                }
+
+            }
+        }
+        return dp[n][m];
     }
 }
