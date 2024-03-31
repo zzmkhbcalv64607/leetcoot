@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net" modified="2024-03-31T11:36:52.059Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="2DSDQ9RB8f9jg1Kul_a3" version="22.1.16" type="github">
+  <diagram name="第 1 页" id="08H03t2G5jersuoqevF8">
+    <mxGraphModel dx="1290" dy="565" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-1" value="基于SpringBoot的论坛系统" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-2" value="用户" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="195" y="100" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-3" value="管理员" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="605" y="100" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="YL4yZ8rcEFhhlHhxl4hO-2" target="YL4yZ8rcEFhhlHhxl4hO-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="295" y="114" as="sourcePoint" />
+            <mxPoint x="369" y="114" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-14" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YL4yZ8rcEFhhlHhxl4hO-10">
+          <mxGeometry x="0.0919" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-15" value="发表话题&lt;br&gt;问题等" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YL4yZ8rcEFhhlHhxl4hO-10">
+          <mxGeometry x="0.0919" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.005;entryY=0.68;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="YL4yZ8rcEFhhlHhxl4hO-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="141" as="sourcePoint" />
+            <mxPoint x="420" y="91" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="141" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-18" value="操作的结果" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YL4yZ8rcEFhhlHhxl4hO-11">
+          <mxGeometry x="-0.0655" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="114" as="sourcePoint" />
+            <mxPoint x="602" y="114" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-17" value="查看用户操作" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YL4yZ8rcEFhhlHhxl4hO-12">
+          <mxGeometry x="0.0786" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.005;entryY=0.68;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="605" y="142" as="sourcePoint" />
+            <mxPoint x="493" y="142" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="528" y="142" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YL4yZ8rcEFhhlHhxl4hO-16" value="审核用户操作" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YL4yZ8rcEFhhlHhxl4hO-13">
+          <mxGeometry x="-0.025" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
